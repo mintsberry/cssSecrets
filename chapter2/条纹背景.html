@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  span {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .box1 {
+    background-image: linear-gradient(#fb3 50%, #58a 0);
+  }
+  .box2 {
+    background-image: linear-gradient(#fb3 50%, #58a 0);
+    background-size: 100% 30px;
+  }
+  .box3 {
+    background-image: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
+  }
+  .box4 {
+    background: linear-gradient(45deg, #fb3 50%, #58a 0);
+    background-size: 30px 30px;
+  }
+  .box5 {
+    background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 42px 42px;
+  }
+  .box6 {
+    background: #eee;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 25%),
+                      linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 25%);
+    background-position: 0 0, 15px 15px,
+                          15px 15px, 30px 30px;
+    background-size: 30px 30px;
+  }
+  </style>
+</head>
+<body>
+  <span class="box1">色标</span>
+  <span class="box2">水平条纹</span>
+  <span class="box3">垂直条纹</span>
+  <span class="box4">45条纹</span>
+  <span class="box5">45条纹✔</span>
+  <span class="box5">60条纹</span>
+  <span class="box6"></span>
+</body>
+</html>
