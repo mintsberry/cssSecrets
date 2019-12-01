@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background: url('./dark.jpg') center / cover fixed;
+      
+    }
+    main {
+      position: relative;
+      display: inline-block;
+      font-size: 96px;
+      color: white;
+      background: hsla(0, 0%, 100%, .3);
+      overflow: hidden;
+    }
+    main > div {
+      margin: 16px;
+    }
+    main::before {
+      content: '';
+      z-index: -1;
+      margin: -20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      filter: blur(20px);
+      background: hsla(0, 0%, 100%, .3);
+      /* background: rgba(255, 0, 0, .5); */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      身处寒夜,把握星光
+    </div>
+  </main>
+</body>
+</html>
