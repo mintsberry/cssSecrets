@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .avatar {
+      display: block;
+      margin: calc(50% - 32px) auto 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      animation: spin 1s infinite linear;
+    }
+
+    .path {
+      margin: 100px auto;
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: lightblue;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0turn) translateY(-54px)  rotate(1turn)
+      }
+
+      to {
+        transform: rotate(1turn) translateY(-54px) rotate(0turn);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="path">
+    <div class="avatar">
+      <img src="./girl.jpg" class="avatar" />
+    </div>
+  </div>
+</body>
+
+</html>
