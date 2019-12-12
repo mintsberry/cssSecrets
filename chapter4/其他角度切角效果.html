@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    /* background: #abc; */
+    background: 
+    linear-gradient(-150deg, transparent 1.5em, #abc 0);
+  }
+  div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.73em; 
+    height: 3em;
+    background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.4) 0) no-repeat 100% 0  ;
+    transform:translateY(-1.3em) rotate(-30deg) ;
+    border-bottom-left-radius: .5em;
+    transform-origin:  bottom right;
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+  }
+  </style>
+</head>
+<body>
+  <div class="">
+
+  </div>
+</body>
+</html>
